@@ -204,7 +204,7 @@
               <h3 class="opacity-6"> 3- Does hiring an actor who played the same role over and over guarantee a successful movie?</h3>
             </li>
             <li class="col-3-12 col-tablet-1-2 col-phablet-1-1 ae-7 fromLeft">
-             <h3 class="opacity-6"> 4- Do the best actors play the same roles over and over again?</h3>
+             <h3 class="opacity-6"> 4- Who are the most appropriate actors for your movie?</h3>
             </li>
           </ul>
         </div>
@@ -260,18 +260,18 @@
         <div class="fix-12-12">
           <ul class="flex verticalCenter">
             <li class="col-6-12">
-							<h1 class="ae-2 fromRight">Our dataset is composed of</h1>
+							<h1 class="ae-2 fromRight">Our actors' dataset is composed of</h1>
               <div class="ae-3 fromRight">
-                <img alt="numbers" src="assets/img/numbers.gif"/>
+                <img alt="numbers" src="assets/img/actors-numbers.gif"/>
                </div>
-							<h1 class="ae-2 fromRight">games</h1>
+							<h1 class="ae-2 fromRight">actors</h1>
             </li>
             <li class="col-6-12">
-              <h1 class="ae-2 fromRight">From which </h1>
+              <h1 class="ae-2 fromRight">Our movies' dataset is composed of</h1>
 							<div class="ae-3 fromRight">
 								<img alt="numbers" src="assets/img/numbers.gif"/>
 							 </div>
-							<h1 class="ae-2 fromRight"> users failed</h1>
+							<h1 class="ae-2 fromRight"> movies</h1>
             </li>
           </ul>
         </div>
@@ -290,7 +290,7 @@
         <div class="fix-12-12">
           <ul class="flex fixedSpaces verticalCenter reverse">
             <div class="col-6-12 left middle">
-              <p class="ae-2 fromLeft"><span class="opacity-8">In order to explain such a relationship, we do a matched analysis comparing the actors who have won an Oscar, with actors that have not been nominated. To make matches more comparable, we consider pairs who have the same (…).
+              <p class="ae-2 fromLeft"><span class="opacity-8">In order to explain such a relationship, we do a matched analysis comparing the actors who have won an Oscar, with actors that have not been nominated. To make matches more comparable, we consider pairs who have the same movie release era, movie languages, and movie countries.
                 After doing a 1-1 matching, we use linear regression model to estimate the effect of having won an Oscar in the final movie rating,
                 which we find to be positive and quite significant.
               </div>
@@ -333,7 +333,7 @@
 
                 We define once again a successful actor to be one that has been awarded an Oscar by the Academy of Motion Picture Arts and Sciences.<br> 
 
-                We extract the roles that actors play using the plot summaries; after running the plot summary through the Stanford NLP Core Pipeline, we [extract] specific linguistic features for each character [more details found in paper, link to more detail maybe?] which are then clustered into different persons.<br>
+                We find the roles that actors play using the plot summaries; after running the plot summary through the Stanford NLP Core Pipeline, we extract specific linguistic features for each character which are then clustered into different personas.<br>
                 
                 We will examine the relationship between having played the same persona a lot of times and having won an Oscar award.</h3>
             </div>
@@ -355,10 +355,10 @@
               <h2 class="ae-2 fromLeft">Generated bag of words for every character in movie plot</h2>
               <p class="ae-3 fromLeft"><span class="opacity-8">Choose a movie</span></p>
               <ul class="tabs controller uppercase bold ae-4 fromCenter" data-slider-id="60-1">
-                <li class="selected">id: 10253953</li>
-                <li>id: 18906519</li>
-                <li>id: 12605892</li>
-								<li >id: 13639421</li>
+                <li class="selected">Ooruku Nooruper</li>
+                <li>The Assassin</li>
+                <li>El diputado</li>
+								<li >Breakthrough</li>
               </ul>
             </li>
             <li class="col-6-12 left ae-5 fromCenter">
@@ -414,7 +414,7 @@
           <ul class="grid">
             <li class="col-6-12 left">
               <h2 class="ae-2 fromLeft">Bag of Words for Cluster 22</h2>
-              <p class="ae-3 fromLeft"><span class="opacity-8">Choose a caracter name</span></p>
+              <p class="ae-3 fromLeft"><span class="opacity-8">Choose a character name</span></p>
               <ul class="tabs controller uppercase bold ae-4 fromCenter" data-slider-id="60-2">
                 <li class="selected">Irene</li>
                 <li>Hitler</li>
@@ -558,7 +558,7 @@
         <div class="fix-12-12">
           <ul class="flex fixedSpaces verticalCenter reverse">
             <div class="col-6-12 left middle">
-              <p class="ae-2 fromLeft"><span class="opacity-8">part B of RQ2
+              <p class="ae-2 fromLeft"><span class="opacity-8">We investigate the effect of having played the same role before directly in the movie rating. We do a matched analysis comparing the actors who have played the role before, with actors that have not. We use linear regression model to estimate the effect of having played the role before in the final movie rating. The results of this analysis are inconclusive.
               </div>
             <li class="col-6-12">
 							<iframe class="ae-2 fromRight" id="if" src="plots/RQ2-CountSame-AverageRating.html" width=600px height=400px></iframe>  
@@ -793,7 +793,7 @@
           <ul class="grid">
             <li class="col-6-12 left">
               <h2 class="ae-2 fromLeft">Generated bag of words for every character in movie plot</h2>
-              <p class="ae-3 fromLeft"><span class="opacity-8">Choose a caracter name</span></p>
+              <p class="ae-3 fromLeft"><span class="opacity-8">Choose a character name</span></p>
               <ul class="tabs controller uppercase bold ae-4 fromCenter" data-slider-id="60-2">
                 <li class="selected">Nooruper</li>
                 <li>Balan</li>
@@ -895,7 +895,7 @@
           <ul class="grid">
             <li class="col-6-12 left">
               <h2 class="ae-2 fromLeft">Generated bag of words for every character in movie plot</h2>
-              <p class="ae-3 fromLeft"><span class="opacity-8">Choose a caracter name</span></p>
+              <p class="ae-3 fromLeft"><span class="opacity-8">Choose a character name</span></p>
               <ul class="tabs controller uppercase bold ae-4 fromCenter" data-slider-id="60-3">
                 <li class="selected">Juanito</li>
                 <li>Orbea</li>
@@ -942,7 +942,7 @@
           <ul class="grid">
             <li class="col-6-12 left">
               <h2 class="ae-2 fromLeft">Generated bag of words for every character in movie plot</h2>
-              <p class="ae-3 fromLeft"><span class="opacity-8">Choose a caracter name</span></p>
+              <p class="ae-3 fromLeft"><span class="opacity-8">Choose a character name</span></p>
               <ul class="tabs controller uppercase bold ae-4 fromCenter" data-slider-id="50-3">
                 <li class="selected">Hitler</li>
                 <li>Rogers</li>
